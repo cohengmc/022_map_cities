@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Chicle&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Press+Start+2P&family=Tourney:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Map Clicker</title>
+  </head>
+  <body>
+    <div id="map-container">
+      <!-- <img id="usa-map" src="images/USA_MAP.png" alt="Map of the USA" /> -->
+      <div id="boston-dot" class="dot"></div>
+      <div id="new-york-dot" class="dot"></div>
+      <div id="baltimore-dot" class="dot"></div>
+      <div id="dc-dot" class="dot"></div>
+      <div id="new-orleans-dot" class="dot"></div>
+      <div id="austin-dot" class="dot"></div>
+      <div id="tucson-dot" class="dot"></div>
+      <div id="la-dot" class="dot"></div>
+      <div id="sf-dot" class="dot"></div>
+      <div id="sd-dot" class="dot"></div>
+
+      <!-- <div id="dc-nola-line" class="line"></div> -->
+      <div id="train">🚂</div>
+      <svg
+        id="train-path"
+        width="668"
+        height="275"
+        viewBox="0 0 668 275"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M661 2C643.5 40 640.329 9.42835 628.5 39C623.432 51.6702 615.616 59.9539 610.408 65.9044C605.268 71.7776 603.727 80.7277 600.709 87.9252V87.9252C599.578 90.6208 597.983 93.0967 595.996 95.24L550.788 143.994C548.933 145.994 547.264 148.158 545.802 150.461L534.258 168.63C526.002 181.627 511.673 189.5 496.275 189.5H494.738C482.158 189.5 470.152 194.766 461.631 204.021L452.674 213.75C448.382 218.412 446 224.517 446 230.854V231.335C446 236.007 444.617 240.574 442.025 244.462V244.462C437.636 251.046 430.247 255 422.335 255H390.5L318.07 264.275C314.154 264.776 311.362 260.571 313.345 257.157V257.157C315.189 253.98 312.897 250 309.224 250H256.765C248.826 250 241.122 247.298 234.922 242.338L211.767 223.814C206.973 219.979 201.445 217.165 195.523 215.546L135 199L60.5182 167.766C48.7328 162.823 39.6047 153.103 35.4118 141.031L8.25686 62.8453C7.60054 60.9556 7.17843 58.9925 7 57V57L11.69 109.371C12.5412 118.877 16.3926 127.866 22.6875 135.039L41.422 156.388C42.6768 157.818 44.2114 158.975 45.931 159.789V159.789C52.6765 162.981 55.7052 170.924 52.7975 177.797L52.5 178.5"
+          stroke="#C80606"
+          stroke-width="5"
+          stroke-dasharray="10 10"
+        />
+        <defs>
+          <filter
+            id="filter0_d_10_5"
+            x="0.509979"
+            y="0.954254"
+            width="666.761"
+            height="273.861"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feflood flood-opacity="0" result="BackgroundImageFix" />
+            <fecolormatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feoffset dy="4" />
+            <fegaussianblur stdDeviation="2" />
+            <fecomposite in2="hardAlpha" operator="out" />
+            <fecolormatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+            />
+            <feblend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_10_5"
+            />
+            <feblend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_10_5"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
